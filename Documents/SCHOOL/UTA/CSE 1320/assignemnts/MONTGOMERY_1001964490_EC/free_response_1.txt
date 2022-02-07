@@ -1,0 +1,1 @@
+The reason it is more efficient to pass a reference to a place in memory than not is because otherwise, you would have to make a copy of the data and pass that copy to the function. An address is 8 bytes on a 64bit OS - to copy the contents of a vector is significantly more.

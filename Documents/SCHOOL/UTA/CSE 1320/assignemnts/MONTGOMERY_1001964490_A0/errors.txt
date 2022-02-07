@@ -1,0 +1,2 @@
+./a.out 2> errors.txt
+ERROR: Nothing is really wrong.

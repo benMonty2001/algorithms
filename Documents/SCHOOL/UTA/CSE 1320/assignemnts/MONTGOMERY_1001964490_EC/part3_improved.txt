@@ -1,0 +1,1 @@
+Single Thread: 950000 nanoseconds passed

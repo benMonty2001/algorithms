@@ -1,0 +1,7 @@
+(a) My programming experience began in highschool. I was tired of computers seeming like magic boxes that were beyond comprehension. I wanted to know how they worked and I still do. Although my study of programming has been scarce save a highschool course in javascript, I enjoyed taking your CSE 1310 course over the summer and I look forward to learning even more in this class.
+
+(b) Up until my college pre-cal class, I have always disliked math and been really bad at it. My feelings have since changed and my most recent math credit was in Calc 1.
+
+(c) I want to learn programming to enhance my problem solving skills and use it for a job one day.
+
+(d) I expect this course to challenge me and cause me to bang my head on my desk at least once a week. I expect to enjoy this class and gain a confidence in computer programming.
