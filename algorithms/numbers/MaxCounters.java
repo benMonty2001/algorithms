@@ -6,21 +6,24 @@ public class MaxCounters {
 		int[] counters = new int[numCounters];
 		int maxCounter = 0;
         int previousMaxApplied = 0;
+        boolean maxApplied = true;
 		for(int i = 0; i < list.length; i++) {
             if(list[i] == numCounters + 1) {
 				previousMaxApplied = maxCounter;
-			}
-			if(1 <= list[i] && list[i] <= numCounters) {
-                
-                if(counters[list[i] - 1] < maxCounter) {
-                    counters[list[i] - 1] = 1 + previousMaxApplied;
-                } else if(counters[list[i] - 1] == maxCounter) {
-                    counters[list[i] - 1] += 1;
+				maxApplied = true;
+			} else {
+                if(maxApplied) {
+                	if(counters[list[i] - 1] >= previousMaxApplied) {
+                		counters[list[i] - 1] += 1;
+                	} else {
+                		counters[list[i] - 1] = 1 + previousMaxApplied;
+                	}
+                } else {
+                	counters[list[i] - 1] += 1;
                 }
                 if(counters[list[i] - 1] > maxCounter) {
-				    maxCounter = counters[list[i] - 1];
-			    } 
-
+					maxCounter = counters[list[i] - 1];
+				}
 			}
 		}
 		for(int i = 0; i < numCounters; i++) {
